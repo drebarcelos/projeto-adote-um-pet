@@ -1,10 +1,13 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
-export const AppRoutes = () => {
+import { HomePage } from '../pages/home'
+
+const AppRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route/>
+                <Route path="/" element={<HomePage />} exact />
             </Routes>
         </BrowserRouter>
     )
 }
+export default AppRoutes
